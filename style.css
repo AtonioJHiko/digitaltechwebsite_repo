@@ -15,6 +15,12 @@
     padding: 50px;
 }
 
+.second_one {
+    grid-area: second_one;
+    border: 1px solid #000000;
+    padding: 50px;
+}
+
 .second_two {
     grid-area: second_two;
     border: 1px solid #000000;
