@@ -3,68 +3,28 @@
     grid-template-rows: auto;
     grid-template-columns: 4fr 1fr 2fr 2fr 1fr 4fr;
     grid-template-areas:
-        "first first first first first first"
-        "second_one second_one second_one second_two second_two second_two"
-        "third_one third_one third_two third_two third_three third_three"
-        "fourth_one fourth_two fourth_two fourth_three fourth_three fourth_four";
+    "titlepagename titlepagename"
+    "navbar navbar"
+    "paragraph1 image1"
+    "footer footer";
 }
 
-.first {
-    grid-area: first;
-    border: 1px solid #000000;
-    padding: 50px;
+.titlepagename {
+    grid-area: titlepagename;
 }
 
-.second_one {
-    grid-area: second_one;
-    border: 1px solid #000000;
-    padding: 50px;
+.navbar {
+    grid-area: navbar;
 }
 
-.second_two {
-    grid-area: second_two;
-    border: 1px solid #000000;
-    padding: 50px;
+.paragraph1{
+    grid-area: paragraph1;
 }
 
-.third_one {
-    grid-area: third_one;
-    border: 1px solid #000000;
-    padding: 50px;
+.image1{
+    grid-area: image1;
 }
 
-.third_two {
-    grid-area: third_two;
-    border: 1px solid #000000;
-    padding: 50px;
-}
-
-.third_three {
-    grid-area: third_three;
-    border: 1px solid #000000;
-    padding: 50px;
-}
-
-.fourth_one {
-    grid-area: fourth_one;
-    border: 1px solid #000000;
-    padding: 50px;
-}
-
-.fourth_two {
-    grid-area: fourth_two;
-    border: 1px solid #000000;
-    padding: 50px;
-}
-
-.fourth_three {
-    grid-area: fourth_three;
-    border: 1px solid #000000;
-    padding: 50px;
-}
-
-.fourth_four {
-    grid-area: fourth_four;
-    border: 1px solid #000000;
-    padding: 50px;
+.footer {
+    grid-area: footer;
 }
