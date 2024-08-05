@@ -7,14 +7,19 @@
     "navbar navbar"
     "paragraph1 image1"
     "footer footer";
+    background-color: #a6caec;
 }
 
 .titlepagename {
     grid-area: titlepagename;
+    background-color: #404040;
+    color: white;
 }
 
 .navbar {
     grid-area: navbar;
+    background-color: #595959;
+    color: white;
 }
 
 .paragraph1{
@@ -27,4 +32,10 @@
 
 .footer {
     grid-area: footer;
+    background-color: #404040;
+    color: white;
+}
+
+img {
+    width: 50%;
 }
