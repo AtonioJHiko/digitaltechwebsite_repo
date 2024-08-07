@@ -1,3 +1,7 @@
+body {
+    background-color: #a6caec;
+}
+
 .container {
     display: grid;
     grid-template-rows: auto;
@@ -7,7 +11,6 @@
     "navbar navbar"
     "paragraph1 image1"
     "footer footer";
-    background-color: #a6caec;
 }
 
 .titlepagename {
@@ -24,10 +27,12 @@
 
 .paragraph1{
     grid-area: paragraph1;
+    background-color: #99b3cc;
 }
 
 .image1{
     grid-area: image1;
+    background-color: white;
 }
 
 .footer {
@@ -37,5 +42,8 @@
 }
 
 img {
-    width: 50%;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
