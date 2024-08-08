@@ -16,16 +16,15 @@ body {
 .titlepagename {
     grid-area: titlepagename;
     background-color: #404040;
-    color: white;
+    color: rgba(255, 255, 255, 0.836);
     text-align: center;
 }
 
 .navbar {
     grid-area: navbar;
     background-color: #595959;
-    color: white;
-    padding: 5px;
     text-align: center;
+    overflow: auto;
 }
 
 .navbar ul {
@@ -34,13 +33,19 @@ body {
 
 .navbar li {
     display: inline;
-    padding: 20px;
     background-color: #595959;
 }
 
-/*.narbar a {
-    
-}*/
+.navbar a {
+    float: left;
+    padding: 7px;
+    text-decoration: none;
+    font-size: 20px;
+    width: 10%; /* Four links of equal widths */
+    text-align: center;
+    color: rgba(255, 255, 255, 0.836);
+    text-align: justify; 
+}
 
 .paragraph1{
     grid-area: paragraph1;
@@ -50,6 +55,7 @@ body {
 
 .image1{
     grid-area: image1;
+    margin: 10px;
 }
 
 .footer {
