@@ -23,7 +23,22 @@ body {
     grid-area: navbar;
     background-color: #595959;
     color: white;
+    padding: 5px;
 }
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline;
+    padding: 20px;
+    background-color: #595959;
+}
+
+/*.narbar a {
+    
+}*/
 
 .paragraph1{
     grid-area: paragraph1;
