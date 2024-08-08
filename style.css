@@ -17,6 +17,7 @@ body {
     grid-area: titlepagename;
     background-color: #404040;
     color: white;
+    text-align: center;
 }
 
 .navbar {
@@ -24,6 +25,7 @@ body {
     background-color: #595959;
     color: white;
     padding: 5px;
+    text-align: center;
 }
 
 .navbar ul {
@@ -43,6 +45,7 @@ body {
 .paragraph1{
     grid-area: paragraph1;
     background-color: #99b3cc;
+    padding: 20px;
 }
 
 .image1{
