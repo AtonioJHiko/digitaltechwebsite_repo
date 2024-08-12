@@ -5,26 +5,28 @@ body {
 .container {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns:  1fr 2fr;
+    grid-template-columns:  1fr 1fr 1fr;
     grid-template-areas:
-    "titlepagename titlepagename"
-    "navbar navbar"
-    "paragraph1 image1"
-    "footer footer";
+    "titlepagename titlepagename titlepagename"
+    "navbar navbar navbar"
+    "paragraph1 paragraph1 image1"
+    "footer footer footer";
 }
 
 .titlepagename {
     grid-area: titlepagename;
     background-color: #404040;
-    color: rgba(255, 255, 255, 0.836);
+    color: white;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
     grid-area: navbar;
-    background-color: #595959;
+    background-color: #404040;
     text-align: center;
     overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar ul {
@@ -33,24 +35,21 @@ body {
 
 .navbar li {
     display: inline;
-    background-color: #595959;
+    color: white;
 }
 
 .navbar a {
-    float: left;
     padding: 7px;
-    text-decoration: none;
-    font-size: 20px;
-    width: 10%; /* Four links of equal widths */
-    text-align: center;
-    color: rgba(255, 255, 255, 0.836);
-    text-align: justify; 
+    font-size: 15px;
+    width: 5%; /* Four links of equal widths */ 
 }
 
 .paragraph1{
     grid-area: paragraph1;
     background-color: #99b3cc;
     padding: 20px;
+    text-align: justify;
+    font-size: 20px;
 }
 
 .image1{
@@ -62,11 +61,11 @@ body {
     grid-area: footer;
     background-color: #404040;
     color: white;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 img {
-    width: 70%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
