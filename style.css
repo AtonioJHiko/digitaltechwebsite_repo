@@ -1,5 +1,6 @@
 body {
     background-color: #a6caec;
+    margin-top: 15px;
 }
 
 .container {
@@ -16,7 +17,7 @@ body {
 .titlepagename {
     grid-area: titlepagename;
     background-color: #404040;
-    color: white;
+    color: rgb(146, 255, 240);
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -47,14 +48,23 @@ body {
 .paragraph1{
     grid-area: paragraph1;
     background-color: #99b3cc;
-    padding: 20px;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 220px;
     text-align: justify;
     font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .image1{
     grid-area: image1;
-    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
 }
 
 .footer {
