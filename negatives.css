@@ -1,0 +1,72 @@
+body {
+    background-color: #99b3cc;
+    margin-top: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-areas:
+    "titlepagename titlepagename titlepagename"
+    "navbar navbar navbar"
+    "paragraph1 paragraph1 image1"
+    "footer footer footer";
+}
+
+.titlepagename {
+    grid-area: titlepagename;
+    background-color: #404040;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    grid-area: navbar;
+    background-color: #404040;
+    text-align: center;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar li {
+    display: inline;
+    color: white;
+}
+
+.navbar a {
+    padding: 7px;
+    font-size: 15px;
+    width: 5%; /* Four links of equal widths */ 
+}
+
+.paragraph1{
+    grid-area: paragraph1;
+    background-color: #a6caec;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 220px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.image1{
+    grid-area: image1;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #404040;
+    color: white;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
