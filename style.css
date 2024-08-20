@@ -1,5 +1,5 @@
 body {
-    background-color: #1175d3;
+    background-color: #78beff;
     margin-top: 15px;
 }
 
@@ -47,7 +47,7 @@ body {
 
 .paragraph1{
     grid-area: paragraph1;
-    background-color: #a6caec;
+    background-color: #78beff;
     padding-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
