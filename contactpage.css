@@ -9,7 +9,7 @@ body {
     grid-template-areas:
     "titlepagename titlepagename titlepagename"
     "navbar navbar navbar"
-    "paragraph1 paragraph1 image1"
+    "contactform contactform contactform"
     "footer footer footer";
 }
 .titlepagename {
