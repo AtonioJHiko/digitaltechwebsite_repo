@@ -1,61 +1,53 @@
-*{
-    background-color: #060616;
+body {
+    background-color: #99b3cc;
+    margin-top: 15px;
 }
-
-h1 {
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-areas:
+    "titlepagename titlepagename titlepagename"
+    "navbar navbar navbar"
+    "paragraph1 paragraph1 image1"
+    "footer footer footer";
+}
+.titlepagename {
+    grid-area: titlepagename;
+    background-color: #404040;
     color: white;
-    padding-top: 10px;
     text-align: center;
-    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-
-input {
-    background-color: white;
-    width: 70%;
-    margin-left: 12%;
-    font-size: 20px;
-    padding: 16px 16px;
-    border-radius: 10px;
-    border-color: black;
-    margin-bottom: 20px;
-}
-
-textarea {
-    background-color: white;
-    width: 70%;
-    margin-left: 12%;
-    font-size: 20px;
-    padding: 16px 16px;
-    border-radius: 10px;
-    border-color: black;
-    margin-bottom: 25px;
-}
-
-input:focus-within {
-    outline: none;
-    border-color: #5bd183;
-    border-width: 3px;
-}
-
-textarea:focus-within {
-    outline: none;
-    border-color: #5bd183;
-    border-width: 3px;
-}
-
-button {
-    background-color: #5bd183;
-    border-radius: 20px;
-    border-color: black;
-    font-size: 22px;
-    padding: 10px 18px;
+.navbar {
+    grid-area: navbar;
+    background-color: #404040;
     text-align: center;
-    display: flex;
-    margin: auto;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar ul {
+    list-style-type: none;
+}
+.navbar li {
+    display: inline;
+    color: white;
+}
+.navbar a {
+    padding: 7px;
+    font-size: 15px;
+    width: 5%; /* Four links of equal widths */ 
 }
 
-button:hover {
-    opacity: 80%;
-    cursor: pointer;
+.footer {
+    grid-area: footer;
+    background-color: #404040;
+    color: white;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-
