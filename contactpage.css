@@ -22,3 +22,69 @@ body {
     align-items: start;
     gap: 20px;
 }
+
+/* This container is for the "Get in Touch" h2 title. */
+
+.contact-left-title h2 {
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+/* This container is for the hr tag. A hr tag is something that separates information in a website. On our website, the hr tag is a line underneath the "get in touch". */
+
+.contact-left-title hr {
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* This container is for the class inside all the input tags in html, which is the contact-inputs class. This will change the design of the boxes on our website to make it look presentable. */
+
+.contact-inputs {
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: grey;
+    border-radius: 50px;
+}
+
+/* This container is for the text area within the contact-left class. It will be used to increase the size within the class. */
+
+.contact-left textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+/* The next containers will be features for the boxes design in the website. The feature for this container is when you click the boxes, there will be a border around the boxes indicating which box you are currently on */
+
+.contact-inputs:focus {
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+/* this container is for the submit button design. */
+
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    cursor: pointer;
+}
