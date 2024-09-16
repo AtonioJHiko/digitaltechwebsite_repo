@@ -12,6 +12,7 @@ body {
     "titlepagename titlepagename titlepagename"
     "navbar navbar navbar"
     "image1 image1 image1"
+    "websitesummary websitesummary websitesummary"
     "footer footer footer";
 }
 
@@ -63,7 +64,7 @@ img {
 
 .text{
     color: white;
-    font-size: 50px;
+    font-size: 2vw;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -72,6 +73,13 @@ img {
 
 .text p {
     overflow: auto;
+}
+
+.websitesummary {
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    width: 100%;
 }
 
 .footer {
