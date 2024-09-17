@@ -23,6 +23,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    opacity: 0.95;
 }
 
 .navbar {
@@ -31,6 +32,7 @@ body {
     text-align: center;
     overflow: auto;
     font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.95;
 }
 
 .navbar ul {
@@ -51,14 +53,11 @@ body {
 
 .image1 {
     grid-area: image1;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 30px;
-    padding-right: 30px; 
+    height: 800px;
 }
 
 img {
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .text{
@@ -70,8 +69,8 @@ img {
     transform: translate(-50%,-50%);
 }
 
-.text p {
-    overflow: auto;
+.websitesummary {
+    font-size: 40px;
 }
 
 .footer {
@@ -84,5 +83,6 @@ img {
     border-bottom-right-radius: 10px;
     font-size: 15px;
     padding: 30px;
+    opacity: 0.95;
 }
 
