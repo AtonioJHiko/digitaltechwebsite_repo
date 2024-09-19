@@ -1,18 +1,7 @@
-
-.navbar {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns:  1fr 1fr 1fr;
-    grid-template-areas: 
-    "navbar navbar navbar"
-    "titlepagename titlepagename titlepagename";
-}
-
 body {
-    font-family: 'Outfit';
-    background: linear-gradient(#ffdad5, #fff7f9);
+    background: linear-gradient(#2c3e50, #58b8c7);
+    margin-top: 15px;
 }
-
 
 .titlepagename {
     grid-area: titlepagename;
@@ -24,6 +13,23 @@ body {
     border-top-right-radius: 10px;
 }
 
+.container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-areas:
+    "titlepagename titlepagename titlepagename"
+    "navbar navbar navbar";
+}
+
+
+.navbar {
+    grid-area: navbar;
+    background-color: #404040;
+    text-align: center;
+    overflow: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 .navbar ul {
