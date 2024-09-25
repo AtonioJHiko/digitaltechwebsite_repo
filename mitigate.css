@@ -10,8 +10,11 @@ body {
     grid-template-areas:
     "titlepagename titlepagename titlepagename"
     "navbar navbar navbar"
-    "paragraph1 paragraph1 image1"
+    "paragraph1 paragraph1 media"
     "footer footer footer";
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .titlepagename {
@@ -19,9 +22,12 @@ body {
     background-color: #404040;
     color: white;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    font-size: 2em;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -30,6 +36,8 @@ body {
     text-align: center;
     overflow: auto;
     font-family: Arial, Helvetica, sans-serif;
+    opacity: 0.9;
+    padding: 1px 0;
 }
 
 .navbar ul {
@@ -42,35 +50,53 @@ body {
 }
 
 .navbar a {
-    padding: 7px;
-    font-size: 15px;
-    width: 5%; /* Four links of equal widths */ 
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #58b8c7;
+    border-radius: 5px;
 }
 
 .paragraph1{
     grid-area: paragraph1;
     background-color: #a6caec;
-    padding-top: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 220px;
+    padding: 20px;
     text-align: justify;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
-.image1{
-    grid-area: image1;
+.image1 {
+    grid-area: media;
+    margin: auto;
+    padding: 10px;
+    background-color: #a6caec;
+    opacity: 0.9;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image1 img,
+.image1 video {
+    max-width: 100%;
+    border-radius: 10px;
 }
 
 .footer {
     grid-area: footer;
     background-color: #404040;
     color: white;
-    padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 20px;
+    opacity: 0.9;
 }
