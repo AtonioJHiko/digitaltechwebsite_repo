@@ -71,6 +71,15 @@ body {
     color: black;
 }
 
+.reference hr{
+    border: none;
+    width: 660px;
+    height: 2px;
+    background-color: grey;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
 .image1 {
     grid-area: media;
     margin: auto;
