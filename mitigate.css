@@ -100,6 +100,10 @@ body {
     border-radius: 10px;
 }
 
+iframe {
+    border: none;
+}
+
 .footer {
     grid-area: footer;
     background-color: #2a5298;
