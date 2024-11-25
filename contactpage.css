@@ -1,6 +1,7 @@
 body {
-    background: linear-gradient(#2c3e50, #58b8c7);
+    background: linear-gradient(#1e3c72, #3484d4);
     margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -30,12 +31,24 @@ body {
     opacity: 0.9;
 }
 
+.titlepagename {
+    grid-area: titlepagename;
+    background-color: #2a5298;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0.9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .navbar {
     grid-area: navbar;
-    background-color: #404040;
+    background-color: #243B55;
     text-align: center;
     overflow: auto;
-    font-family: Arial, Helvetica, sans-serif;
     opacity: 0.9;
     padding: 1px 0;
 }
@@ -67,11 +80,12 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     padding: 20px;
-    background-color: #a6caec;
+    background-color: #ffffff; 
     border-radius: 10px;
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 30px;
+    box-shadow: 0 4px 8px #1010109e;
     box-sizing: border-box;
     opacity: 0.9;
 }
@@ -87,9 +101,9 @@ body {
 /* This container is for the "Get in Touch" h2 title. */
 
 .contact-left-title h2 {
-    font-weight: 600;
-    color: black;
-    font-size: 30px;
+    font-weight: bold;
+    color: #2a5298; 
+    font-size: 1.8rem;
     margin-bottom: 5px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -99,8 +113,8 @@ body {
 .contact-left-title hr {
     border: none;
     width: 120px;
-    height: 5px;
-    background-color: grey;
+    height: 4px;
+    background-color: #58b8c7;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -114,8 +128,9 @@ body {
     outline: none;
     padding-left: 25px;
     font-weight: 500;
-    color: grey;
+    color: #555;
     border-radius: 50px;
+    transition: border-color 0.3s ease;
 }
 
 /* This container is for the text area within the contact-left class. It will be used to increase the size within the class. */
@@ -129,7 +144,7 @@ body {
 /* The next containers will be features for the boxes design in the website. The feature for this container is when you click the boxes, there will be a border around the boxes indicating which box you are currently on */
 
 .contact-inputs:focus {
-    border: 2px solid #ff994f;
+    border: 2px solid #58b8c7;
 }
 
 .contact-inputs::placeholder {
@@ -143,12 +158,12 @@ body {
     align-items: center;
     padding: 15px 30px;
     font-size: 16px;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 50px;
-    background-color: black;
+    background-color: #243B55; 
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .contact-left button:hover {
@@ -157,27 +172,25 @@ body {
 
 .contact-background {
     flex: 1;
-    background-color: white;
+    background-color: #f9f9f9;
     border-radius: 10px;
-    margin: 0;
-    width: 80%; 
-    max-width: 600px;
     padding: 20px;
+    box-shadow: 0 4px 8px #0000006b;
     opacity: 0.9;
 }
 
 .contact-right {
     text-align: left; 
     margin-left: 20px; 
-    padding: 30px;
+    padding: 20px;
     font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 .footer {
     grid-area: footer;
-    background-color: #404040;
+    background-color: #2a5298;
     color: white;
     text-align: center;
     padding: 20px;
@@ -188,5 +201,5 @@ body {
     margin: 0 auto;
     box-sizing: border-box; 
     opacity: 0.9;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
